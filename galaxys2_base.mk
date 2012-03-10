@@ -71,6 +71,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxys2/configs/media_profiles.xml:system/etc/media_profiles.xml
+	
+# OMX
+PRODUCT_COPY_FILES += \
+	device/samsung/galaxys2/configs/secomxregistry:system/etc/secomxregistry
 
 # Sensors
 PRODUCT_PACKAGES += \

@@ -62,9 +62,6 @@ PRODUCT_COPY_FILES += \
 # Packages
 PRODUCT_PACKAGES := \
     com.android.future.usb.accessory \
-    TvOut \
-    TvOutHack \
-    camera.exynos4 \
     GalaxyS2Settings \
     SamsungServiceMode
 
@@ -148,5 +145,5 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
 # Include exynos4 platform specific parts
-#$(call inherit-product, hardware/samsung/exynos4/exynos4.mk)
-#$(call inherit-product, hardware/samsung/exynos4/Android.mk)
+$(call inherit-product, hardware/samsung/exynos4/smdk4210.mk)
+$(call inherit-product, hardware/samsung/exynos4/Android.mk)
